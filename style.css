@@ -158,6 +158,12 @@ ul {
   text-decoration: none;
 }
 
+.en {
+  color: var(--color);
+  font-weight: 700;
+  margin-right: 0.5em;
+}
+
   /* hero */
 
 .hero-container {
