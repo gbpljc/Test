@@ -58,6 +58,60 @@ body {
   font-family: 'Inter', 'Roboto', 'Merriweather', sans-serif;
   max-width: 1440px;
   margin: 0 auto;
+  background-color: #000;
+}
+
+:root {
+  --color: #BDAE82;
+  --transition: 0.5s linear;
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-weight: 700;
+  font-family: Merriweather;
+}
+
+a:hover {
+  color: var(--color);
+  transition: var(--transition);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* Fonts */
+.inter {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  color: #fff;
+}
+.flex {
+  display: flex;
+}
+
+/* Button */
+.btn {
+  width: 220px;
+  height: 55px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  display: block;
+  cursor: pointer;
+  background-color: var(--color);
+  border: none;
+  margin: 0;
+}
+
+.btn:hover {
+  color: #fff;
+  transition: var(--transition);
 }
 
   .container {
@@ -65,4 +119,73 @@ body {
     width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
+    outline: olivedrab 1px solid;
   }
+
+
+/* header */
+
+.header-container {
+  background: url("./assets/img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  height: 90px;
+  margin-right: auto;
+
+}
+
+.nav-logo {
+  align-items: center;
+  position: relative;
+}
+
+.nav {
+  margin-left: auto;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-link {
+  /* display: inline-block; */
+  padding: 0 20px;
+  text-decoration: none;
+}
+
+  /* hero */
+
+.hero-container {
+  background-image: url('./assets/img/header-bg.jpg');
+  background-position: center -90px;
+  background-repeat: no-repeat;
+  height: 820px;
+}
+
+.hero-title {
+  padding-bottom: 12px;
+  font-family: Merriweather;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 117px;
+  color: #fff;
+  }
+
+.hero-content {
+  max-width: 524px;
+  padding: 161px 0 0 80px;
+  padding-left: 60px;
+  flex-direction: column;
+  margin-bottom: 330px;
+  line-height: 40px;
+}
+
+.hero-subtitle {
+  padding-bottom: 25px;
+}
