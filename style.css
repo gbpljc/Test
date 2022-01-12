@@ -324,11 +324,7 @@ ul {
   background-color: rgba(0,0,0,0) ;
 }
 
-.portfolio-btn:not(:last-child) {
-  margin-right: 5px;
-}
-
-.portfolio_menu {
+.portfolio-menu {
   margin-bottom: 60px;
 
 }
@@ -337,8 +333,13 @@ ul {
   width: 100%;
 }
 
+.portfolio-menu {
+  column-gap: 5px;
+}
+
 .portfolio-menu-wrapper {
   justify-content: center;
+  
 }
 
 .photo {
@@ -360,4 +361,34 @@ margin-bottom: 25px;
 
 .portfolio_item:nth-child(3n) {
   margin-right: 0;
+}
+
+.section-portfolio {
+  margin-bottom: 75px;
+}
+
+/* Video */
+.video-player {
+  position: relative;
+  max-width: 100%;
+  max-height: 705px;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-button {
+  position: absolute;
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  background-color: rgba(0,0,0,0)
+}
+
+.video-button:hover path{
+  fill: var(--color);
+  transition: var(--transition);
+}
+
+.video-button:hover {
+  background-color: rgba(0,0,0,0);
 }
