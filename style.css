@@ -80,8 +80,22 @@ h2 {
   font-style: normal;
   line-height: 80px;
   letter-spacing: 0em;
- 
+}
 
+h4 {
+  margin: 0;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+
+}
+
+p {
+  margin: 0;
 }
 
 a:hover {
@@ -223,7 +237,8 @@ ul {
   }
 
   .section-title {
-    position: relative
+    position: relative;
+    margin-bottom: 60px;
   }
 
  .section-title::before {
@@ -246,4 +261,103 @@ ul {
   height: 2px;
   background-color: var(--color);
   margin-left: 118%;
+}
+
+/* Skills */
+
+.skills-content {
+  padding:0 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+
+.skills-item {
+  width: 280px;
+  text-align: center;
+  font-size: 18px;
+  display:block;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-top: 100px;
+  /* margin-right: 80px; */
+
+}
+
+.skills-item:not(:last-child) {
+  /* margin-right: 80px; */
+  margin-bottom: 110px;
+}
+
+.skills-subtitle {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-top: 20px;
+
+}
+
+.skills-photo {
+  background-image: url("./assets/svg/camera1.svg");
+}
+
+.skills-video {
+  background-image: url("./assets/svg/video1.svg");
+}
+
+.skills-retouch {
+  background-image: url("./assets/svg/image1.svg");
+}
+
+.skills-audio {
+  background-image: url("./assets/svg/mic1.svg");
+}
+
+/* Portfolio */
+
+.portfolio-btn {
+  border: 2px solid var(--color);
+  color: var(--color);
+  background-color: rgba(0,0,0,0) ;
+}
+
+.portfolio-btn:not(:last-child) {
+  margin-right: 5px;
+}
+
+.portfolio_menu {
+  margin-bottom: 60px;
+
+}
+
+.portfolio-container {
+  width: 100%;
+}
+
+.portfolio-menu-wrapper {
+  justify-content: center;
+}
+
+.photo {
+  flex-wrap: wrap;
+}
+
+.photo:nth-child(3n) {
+  margin-right: 0;
+}
+
+.portfolio-photo {
+  display: block;
+}
+
+.portfolio_item:not(:last-child) {
+margin-right: 25px;
+margin-bottom: 25px;
+}
+
+.portfolio_item:nth-child(3n) {
+  margin-right: 0;
 }
