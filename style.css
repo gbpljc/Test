@@ -73,6 +73,17 @@ h2 {
   font-family: Merriweather;
 }
 
+h2 {
+  color: var(--color);
+  display: inline-block;
+  font-size: 40px;
+  font-style: normal;
+  line-height: 80px;
+  letter-spacing: 0em;
+ 
+
+}
+
 a:hover {
   color: var(--color);
   transition: var(--transition);
@@ -122,7 +133,10 @@ ul {
     outline: olivedrab 1px solid;
   }
 
-
+  .section {
+    padding: 0 20px;
+    position: relative;
+  }
 /* header */
 
 .header-container {
@@ -171,6 +185,7 @@ ul {
   background-position: center -90px;
   background-repeat: no-repeat;
   height: 820px;
+  margin-bottom: 100px;
 }
 
 .hero-title {
@@ -194,4 +209,41 @@ ul {
 
 .hero-subtitle {
   padding-bottom: 25px;
+}
+
+/* Skills */
+
+
+.title-wrapper {
+  position: relative;
+  width: 50%;
+  margin: auto;
+  justify-content: center;
+  overflow-x: hidden;
+  }
+
+  .section-title {
+    position: relative
+  }
+
+ .section-title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top:calc(50% - 1px);
+  width: 500%;
+  height: 2px;
+  background-color: var(--color);
+  margin-left: -518%;
+
+}
+.section-title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top:calc(50% - 1px);
+  width: 500%;
+  height: 2px;
+  background-color: var(--color);
+  margin-left: 118%;
 }
