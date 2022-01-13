@@ -473,9 +473,7 @@ margin-left: -20px;
 }
 
 .contacts-wrapper {
-  position: relative;
   justify-content: flex-end;
-  left: -40px;
 }
 
 .contacts-form {
@@ -487,6 +485,10 @@ margin-left: -20px;
 width: 450px;
 }
 
+.contacts-title {
+  margin-bottom: 40px;
+}
+
 .contacts-input {
   height: 50px;
   margin-bottom: 20px;
@@ -494,7 +496,7 @@ width: 450px;
 
 .contacts-textarea {
   resize: none;
-  max-height: 100px;
+  height: 100px;
   margin-bottom: 30px;
 }
 
@@ -502,7 +504,7 @@ width: 450px;
 .contacts-textarea {
   color: var(--color);
   background-color: var(--background-color);
-  border: 1px solid var(--color);
+  border: 2px solid var(--color);
   padding: 0 20px
 }
 
