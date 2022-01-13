@@ -109,6 +109,10 @@ p {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:hover {
   color: var(--color);
   transition: var(--transition);
@@ -117,6 +121,7 @@ a:hover {
 ul {
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
 /* Fonts */
@@ -150,12 +155,24 @@ ul {
   transition: var(--transition);
 }
 
+/* sprite icon */
+
+.icon {
+  width: 50px;
+  height: 50px;
+  fill: white;
+}
+
+.icon:hover {
+  fill: var(--color);
+
+}
+
   .container {
     /* max-width: 1440px; */
     width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
-    outline: olivedrab 1px solid;
   }
 
   .section {
@@ -510,4 +527,49 @@ width: 450px;
 
 ::placeholder {
   color: var(--color);
+}
+
+/* Footer */
+
+.footerlink,
+.footer-left-item {
+  line-height: 50px;
+}
+
+.footer-left-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.footer-center {
+  padding-left: 20px;
+}
+
+.footer-container {
+  height: 150px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-icon:hover {
+transition: var(--transition);
+}
+
+.footer-icon:hover path{
+  fill: var(--color);
+  transition: var(--transition);
+}
+
+.footer-right,
+.footer-left {
+  flex-wrap: wrap;
+}
+
+.footer-list li {
+  max-width: 28px;
+  max-height: 28px;
+}
+.footer-list {
+  flex-wrap: wrap;
+  column-gap: 28px;
 }
