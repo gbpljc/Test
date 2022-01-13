@@ -379,7 +379,7 @@ margin-bottom: 25px;
 }
 
 .section-portfolio,
-.section_price {
+.section-price {
   margin-bottom: 100px;
 }
 
@@ -458,4 +458,54 @@ margin-left: -20px;
   font-weight: 400;
   font-size: 18px;
   line-height: 36px;
+}
+
+/* Contacts */
+
+.section-contacts {
+  padding: 20px;
+  padding-top: 60px;
+  height: 700px;
+  background-image: url("./assets/img/contacts.jpg");
+  background-repeat: no-repeat;
+  background-size: initial;
+  justify-content: flex-end;
+}
+
+.contacts-wrapper {
+  position: relative;
+  justify-content: flex-end;
+  left: -40px;
+}
+
+.contacts-form {
+  flex-direction: column;
+  --background-color: rgba(0, 0, 0, 0);
+}
+
+.contacts-content {
+width: 450px;
+}
+
+.contacts-input {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.contacts-textarea {
+  resize: none;
+  max-height: 100px;
+  margin-bottom: 30px;
+}
+
+.contacts-input,
+.contacts-textarea {
+  color: var(--color);
+  background-color: var(--background-color);
+  border: 1px solid var(--color);
+  padding: 0 20px
+}
+
+::placeholder {
+  color: var(--color);
 }
